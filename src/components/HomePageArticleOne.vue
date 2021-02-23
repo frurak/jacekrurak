@@ -6,8 +6,10 @@
     </div>
     <div class="article_one_text_container">
       <div class="article_one_text_header">
-        <div class="header_first_letter">M</div>
-        <p class="header_letters">uzyczna&nbsp;podróż</p>
+        Muzyczna
+        <div class="article_one_text_subheader">
+          <p class="subfont">podróz</p>
+        </div>
       </div>
       <p class="article_one_text">
         Jestem muzykiem, altowiolistą, skrzypkiem. Od wielu lat pracuję w
@@ -68,22 +70,27 @@ $border: #d1d1d1;
       @include flex(center, flex-start);
       margin-bottom: 2.6rem;
       margin-top: 2.6rem;
-      .header_first_letter {
-        font-weight: 900;
-        background: #000;
-        width: 35px;
-        height: 35px;
-        border-radius: 5px;
-        color: #fff;
-        @include flex(center, center);
-        font-size: 1.5rem;
-        font-family: 'Red Hat Display', sans-serif;
-      }
-      .header_letters {
-        font-weight: 900;
-        font-size: 1.5rem;
-        margin-left: 2px;
-        font-family: 'Red Hat Display', sans-serif;
+      font-family: "Red Hat Display", sans-serif;
+      font-weight: 800;
+      font-size: 3.2rem;
+      line-height: 4.4rem;
+      .subfont {
+        font-family: "Shadows Into Light", cursive;
+        font-weight: 100;
+        font-size: 4rem;
+        position: relative;
+        margin-left: 15px;
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          width: 5px;
+          height: 5px;
+          background: #000;
+          border-radius: 50%;
+        }
       }
     }
     .article_one_text {

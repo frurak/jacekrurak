@@ -6,6 +6,8 @@
     <HomePageArticleOne />
     <HomePageSounds />
     <HomePageAlbum />
+    <HomePageOffer />
+    <Footer />
   </div>
 </template>
 
@@ -16,6 +18,8 @@ import HomePageBanners from "@/components/HomePageBanners.vue";
 import HomePageArticleOne from "@/components/HomePageArticleOne.vue";
 import HomePageSounds from "@/components/HomePageSounds.vue";
 import HomePageAlbum from "@/components/HomePageAlbum.vue";
+import HomePageOffer from "@/components/HomePageOffer.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   components: {
@@ -24,7 +28,9 @@ export default {
     HomePageBanners,
     HomePageArticleOne,
     HomePageSounds,
-    HomePageAlbum
+    HomePageAlbum,
+    HomePageOffer,
+    Footer
   }
 };
 </script>
