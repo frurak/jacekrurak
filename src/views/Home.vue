@@ -42,5 +42,6 @@ body {
 
 .homepage_container {
   max-width: 2000px;
+  margin: 0 auto;
 }
 </style>

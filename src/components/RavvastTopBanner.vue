@@ -1,23 +1,16 @@
 <template>
-  <div class="hp_sounds_container">
-    <div class="sounds_header">
-      Wybrane
-      <div class="subfont_text"><p class="subfont">melodie</p></div>
-    </div>
-    <div class="sounds_players_container">
-      <SoundPlayer />
+  <div class="ravvast_banner_container">
+    <img src="@/assets/ravvast-top.png" alt="Ravvast drum Jacek Rurak" />
+    <div class="ravvast_header">
+      Ravvast
+      <div class="subfont_text"><p class="subfont">drum</p></div>
     </div>
   </div>
 </template>
 
 <script>
-import SoundPlayer from "@/components/SoundPlayer.vue";
-
 export default {
-  name: "HomePageSounds",
-  components: {
-    SoundPlayer
-  }
+  name: "RavvastTopBanner"
 };
 </script>
 
@@ -29,21 +22,35 @@ $border: #d1d1d1;
   justify-content: $ju;
 }
 
-.hp_sounds_container {
+.ravvast_banner_container {
+  height: 50vh;
   width: 100vw;
-  min-height: 100vh;
-  padding: 10vh 5vw 10vh 5vw;
   max-width: 2000px;
   margin: 0 auto;
-  .sounds_header {
-    width: 100%;
+  margin-top: 20vh;
+  padding: 0 14vw;
+  background: #060608;
+  overflow: hidden;
+  position: relative;
+  img {
+    width: 45%;
+    position: absolute;
+    right: 53%;
+    top: 0;
+    transform: translateY(-8%);
+  }
+  .ravvast_header {
     height: auto;
     @include flex(center, flex-start);
     font-family: "Red Hat Display", sans-serif;
     font-weight: 800;
     font-size: 3.2rem;
     line-height: 4.4rem;
-    margin-bottom: 10vh;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
     .subfont_text {
       @include flex(center, center);
       margin-left: 15px;
@@ -52,12 +59,13 @@ $border: #d1d1d1;
         font-weight: 100;
         font-size: 4rem;
         position: relative;
+        color: #fff;
         &::after {
           content: "";
-          background: url("../assets/subtxt-path.svg") no-repeat;
+          background: url("../assets/subtxt-path-wht.svg") no-repeat;
           display: block;
           height: 20px;
-          width: 150px;
+          width: 120px;
           background-position: center;
           position: absolute;
           left: 0;

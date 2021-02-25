@@ -51,6 +51,8 @@ $border: #d1d1d1;
   @include flex(flex-start, space-between);
   overflow-x: hidden;
   border-bottom: 1px solid $border;
+  max-width: 2000px;
+  margin: 0 auto;
   .banner_box {
     width: 24%;
     height: 500px;

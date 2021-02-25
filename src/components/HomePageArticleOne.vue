@@ -48,6 +48,8 @@ $border: #d1d1d1;
   height: 80vh;
   @include flex(flex-start, space-between);
   border-bottom: 1px solid $border;
+  max-width: 2000px;
+  margin: 0 auto;
   .article_one_photo_container {
     width: 49%;
     height: 100%;

@@ -105,6 +105,8 @@ $border: #d1d1d1;
   padding: 10vh 5vw;
   @include flex(center, center);
   flex-direction: column;
+  max-width: 2000px;
+  margin: 0 auto;
   .offer_header {
     width: 100%;
     height: auto;

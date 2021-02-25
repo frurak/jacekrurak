@@ -46,9 +46,13 @@ $border: #d1d1d1;
   padding: 0 5vw 0 0;
   background: #060608;
   @include flex(center, space-between);
+  max-width: 2000px;
+  margin: 0 auto;
   .album_cover_container {
     height: 100%;
     width: 50vw;
+    max-width: 2000px;
+    margin: 0 auto;
     img {
       height: 100%;
     }

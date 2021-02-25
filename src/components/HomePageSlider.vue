@@ -214,6 +214,8 @@ export default {
   padding: 0 5vw;
   @include flex(center, center);
   position: relative;
+  max-width: 2000px;
+  margin: 0 auto;
   margin-top: 20vh;
   .slider_content {
     width: 37vw;

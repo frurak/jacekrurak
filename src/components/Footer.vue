@@ -49,6 +49,9 @@ $border: #d1d1d1;
   @include flex(center, space-between);
   flex-direction: column;
   position: relative;
+  max-width: 2000px;
+  margin: 0 auto;
+  overflow: hidden;
   .footer_top {
     width: 100%;
     height: auto;
@@ -121,7 +124,8 @@ $border: #d1d1d1;
     width: 100vw;
     background-position: center;
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 0%;
     z-index: 0;
   }
